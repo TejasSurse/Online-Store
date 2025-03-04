@@ -1,20 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Online Store </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
 
-    </nav>
-    <main>
-        <h1>Project Setup</h1>
-    </main>
-    <footer>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Online Store</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search products..." aria-label="Search">
+      </form>
+    </div>
+  </nav>
 
-    </footer>
+
+  <div class="container mt-4">
+    <div class="row">
+
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5>Filters</h5>
+            <div class="form-group">
+              <label for="categoryFilter">Category</label>
+              <select class="form-control" id="categoryFilter">
+                <option value="all">All Categories</option>
+
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="sortBy">Sort By</label>
+              <select class="form-control" id="sortBy">
+                <option value="">Select</option>
+                <option value="priceLowHigh">Price: Low to High</option>
+                <option value="priceHighLow">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4">
+        <div id="productList" class="row">
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-header">
+            <h5>Your Cart</h5>
+          </div>
+          <div class="card-body" id="cartItems">
+         
+          </div>
+          <div class="card-footer">
+            <h6>Total: Rs<span id="cartTotal">0</span></h6>
+            <button id="checkoutBtn" class="btn btn-primary btn-block">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
