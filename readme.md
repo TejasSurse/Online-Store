@@ -1,32 +1,42 @@
 # Online Store - Frontend Developer Internship Assignment
 
-This project is a responsive online store built as part of a Frontend Developer Internship assignment. The application allows users to browse products across multiple categories, view product varieties with different prices, filter and sort products, and add product varieties to a shopping cart with dynamic total calculations. The cart functionality also includes features like quantity modification, item removal, and checkout simulation, with cart data persisted using Local Storage.
+This project is a responsive online store developed as part of a Frontend Developer Internship assignment. It enables users to browse various products, view detailed product varieties (with prices displayed in rupees), filter and sort products, and manage a shopping cart with dynamic total calculations. The cart supports quantity adjustments, item removal, and a checkout simulation, with data persisted using Local Storage.
+
+## Live Preview
+
+Check out the live demo on GitHub Pages:  
+[Online Store Live Preview](https://TejasSurse.github.io/Online-Store/)
 
 ## Features
 
-- **Responsive Design:** Built with Bootstrap to ensure the layout works well on both desktop and mobile devices.
-- **Product Browsing:** View a list of products with multiple varieties and associated prices (displayed in rupees).
-- **Filtering and Sorting:** 
+- **Responsive Design:** Utilizes Bootstrap for an optimal experience on desktops, tablets, and mobile devices.
+- **Product Browsing:** View a range of products, each offering multiple varieties with individual prices.
+- **Filtering & Sorting:**
   - Filter products by category.
-  - Search products by name.
+  - Search for products by name.
   - Sort products by price (Low to High and High to Low).
-- **Cart Functionality:**
+- **Shopping Cart Functionality:**
   - Add product varieties to the cart.
-  - Increase or decrease item quantities.
+  - Adjust item quantities using increase/decrease controls.
   - Remove items from the cart.
-  - View the total price, which updates dynamically.
-  - Persist cart data across sessions using Local Storage.
-- **Checkout Simulation:** A checkout button that shows the final total in an alert message.
+  - Real-time total price calculations.
+  - Cart data is persisted across sessions using Local Storage.
+- **Checkout Simulation:** A checkout button that simulates the final purchase process by displaying the total amount.
 
 ## Project Structure
 
-- **index.html**: Contains the HTML markup for the Online store . It includes the layout for the navigation, filters, product list, and cart sections.
-- **style.css**: Contains custom styles to complement Bootstrap and provide specific styling for product cards and cart items.
-- **script.js**: Implements all the interactive functionality:
-  - Fetching product data from an API (or using sample data as a fallback).
+- **index.html:**  
+  Contains the HTML markup for the online store, including the navigation bar, filters, product list, and cart sections.
+
+- **style.css:**  
+  Provides custom styles that complement Bootstrap, with specific emphasis on styling product cards and cart items.
+
+- **script.js:**  
+  Implements the interactive functionality, including:
+  - Fetching product data from an API (with sample data as a fallback).
   - Dynamically rendering products and cart items.
-  - Filtering, sorting, and searching.
-  - Cart management and checkout functionality.
+  - Filtering, searching, and sorting products.
+  - Managing the shopping cart and simulating checkout.
 
 ## Setup & Installation
 
